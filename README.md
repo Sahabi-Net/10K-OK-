@@ -31,11 +31,7 @@ Aplikasi ini menggunakan arsitektur *Client-Server* dengan aplikasi Android seba
 3. Ubah konstanta `BASE_URL` sesuai dengan IP lokal komputer/laptop Anda (Contoh: `http://192.168.1.5/10kok_api/`). **Pastikan HP/Emulator dan Laptop Anda terhubung dalam jaringan WiFi/LAN yang sama**.
 4. Biarkan proses Gradle *sync* berjalan hingga selesai.
 5. Jalankan aplikasi (tekan tombol *Run*) pada emulator atau *device* fisik Anda.
-## 📱 Tangkapan Layar (Screenshots)
-*(Silakan tambahkan folder `/screenshots` dan masukkan gambar dari aplikasi di sini nantinya. Contoh format:)*
-> `![Lacak Pesanan](screenshots/tracking.png)`
-> `![Pesanan Selesai](screenshots/selesai.png)`
 ## 📝 Catatan Tambahan (Untuk Keperluan Tugas)
 Aplikasi ini dioptimalkan khusus untuk keperluan demonstrasi tugas pengembangan UI/UX, dengan penyesuaian khusus pada halaman Lacak Pesanan untuk memudahkan proses presentasi akhir tanpa mengharuskan *state* pesanan berjalan secara *real-time* terus menerus.
 ---
-*Dibuat oleh Adi Setiawan untuk tugas proyek.*
+*Dibuat oleh Adi Setiawan untuk tugas kuliah.*
