@@ -34,4 +34,3 @@ Aplikasi ini menggunakan arsitektur *Client-Server* dengan aplikasi Android seba
 ## 📝 Catatan Tambahan (Untuk Keperluan Tugas)
 Aplikasi ini dioptimalkan khusus untuk keperluan demonstrasi tugas pengembangan UI/UX, dengan penyesuaian khusus pada halaman Lacak Pesanan untuk memudahkan proses presentasi akhir tanpa mengharuskan *state* pesanan berjalan secara *real-time* terus menerus.
 ---
-*Dibuat oleh Adi Setiawan untuk tugas kuliah.*
