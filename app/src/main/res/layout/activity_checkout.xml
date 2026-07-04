@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4B836">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="16dp"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            android:src="@drawable/ic_back"
+            android:tint="@color/secondary"
+            android:padding="6dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pembayaran"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="32dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="24dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/cream"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🛒 Ringkasan Pesanan"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="Lihat Detail"
+                            android:textColor="#FF9800"
+                            android:textStyle="bold"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="#CCCCCC" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tvJumlahSummary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 Menu"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tvHargaSummary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="Rp 10.000"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                    
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+                        <TextView
+                            android:id="@+id/tvOngkirLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ongkir (Delivery)"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tvOngkirValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="Rp 5.000"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="#CCCCCC" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Pembayaran"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tvTotalCheckout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="Rp 15.000"
+                            android:textColor="#4CAF50"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Pilih Metode Pembayaran"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/cream"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <RadioGroup
+                        android:id="@+id/rgMetodePembayaran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rbQris"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="QRIS (All Payment)\nBayar dengan semua aplikasi QRIS"
+                            android:textColor="@color/black"
+                            android:padding="12dp"
+                            android:buttonTint="#FF9800"
+                            android:background="@drawable/bg_white_card"
+                            android:layout_marginBottom="8dp"/>
+
+
+                        <RadioButton
+                            android:id="@+id/rbOvo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="OVO\nBayar menggunakan saldo OVO"
+                            android:textColor="@color/black"
+                            android:padding="12dp"
+                            android:background="@drawable/bg_white_card"
+                            android:layout_marginBottom="8dp"/>
+
+
+                        <RadioButton
+                            android:id="@+id/rbGopay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="GoPay\nBayar menggunakan saldo GoPay"
+                            android:textColor="@color/black"
+                            android:padding="12dp"
+                            android:background="@drawable/bg_white_card"
+                            android:layout_marginBottom="8dp"/>
+
+
+                        <RadioButton
+                            android:id="@+id/rbDana"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="DANA\nBayar menggunakan saldo DANA"
+                            android:textColor="@color/black"
+                            android:padding="12dp"
+                            android:background="@drawable/bg_white_card"
+                            android:layout_marginBottom="8dp"/>
+
+
+                        <RadioButton
+                            android:id="@+id/rbShopeepay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ShopeePay\nBayar menggunakan ShopeePay"
+                            android:textColor="@color/black"
+                            android:padding="12dp"
+                            android:background="@drawable/bg_white_card"
+                            android:layout_marginBottom="8dp"/>
+
+
+                        <RadioButton
+                            android:id="@+id/rbTransfer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Transfer Bank\nTransfer ke rekening bank"
+                            android:textColor="@color/black"
+                            android:padding="12dp"
+                            android:background="@drawable/bg_white_card"
+                            android:layout_marginBottom="8dp"/>
+
+
+                        <RadioButton
+                            android:id="@+id/rbTunai"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tunai (COD)\nBayar saat pesanan diterima"
+                            android:textColor="@color/black"
+                            android:padding="12dp"
+                            android:background="@drawable/bg_white_card"
+                            android:checked="true"/>
+                    </RadioGroup>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:layout_marginTop="12dp"
+                        android:background="#E8F5E9">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🛡️ Transaksi Anda aman dan terenkripsi"
+                            android:textColor="#4CAF50"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:background="#F4B836">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnKonfirmasi"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_button_secondary"
+            android:text="Bayar Sekarang"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

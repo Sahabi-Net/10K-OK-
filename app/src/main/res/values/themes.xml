@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema Utama Aplikasi menggunakan Material 3 -->
+    <style name="Base.Theme._10KOK" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Warna Utama -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <!-- Latar belakang putih eksplisit untuk mencegah layar hitam -->
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="Theme._10KOK" parent="Base.Theme._10KOK" />
+</resources>

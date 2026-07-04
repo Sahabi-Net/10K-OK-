@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbc640"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:cardCornerRadius="80dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/orange"
+        app:strokeWidth="3dp"
+        app:strokeColor="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="★"
+            android:textColor="@color/white"
+            android:textSize="80sp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="🎊 🎉 🎊"
+        android:textSize="28sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Terima Kasih!"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Ulasan kamu sangat berarti bagi kami.\nSampai jumpa di pesanan berikutnya!"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.3"
+        android:alpha="0.75" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLihatRiwayat"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_white_card"
+        android:text="Lihat Riwayat Pesanan"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnKembaliHome"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_button_secondary"
+        android:text="🏠  Kembali ke Beranda"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

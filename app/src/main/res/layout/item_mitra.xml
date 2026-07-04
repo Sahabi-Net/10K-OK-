@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="6dp"
+    android:layout_marginVertical="6dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@android:color/black"
+    app:strokeWidth="1.5dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_toStartOf="@+id/tvStatus"
+                android:layout_alignParentStart="true">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="@android:color/black"
+                    app:cardBackgroundColor="#E2E8F0">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="🤝"
+                        android:gravity="center"
+                        android:textSize="14sp"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/tvNama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Nama Mitra"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="STATUS"
+                android:textColor="#1E293B"
+                android:textStyle="bold"
+                android:textSize="11sp"
+                android:background="#EDF2F7"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="42dp"
+            android:text="mitra@email.com"
+            android:textSize="13sp"
+            android:textColor="#555555"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E2E8F0"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAktif"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:text="Aktifkan"
+                android:textSize="12sp"
+                android:textColor="#2E7D32"
+                android:textStyle="bold"
+                android:padding="0dp"
+                app:cornerRadius="8dp"
+                app:strokeColor="#2E7D32"
+                app:strokeWidth="1.5dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNonaktif"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:text="Nonaktifkan"
+                android:textSize="12sp"
+                android:textColor="#D32F2F"
+                android:textStyle="bold"
+                android:padding="0dp"
+                app:cornerRadius="8dp"
+                app:strokeColor="#D32F2F"
+                app:strokeWidth="1.5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

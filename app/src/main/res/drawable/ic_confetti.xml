@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="60dp"
+    android:viewportWidth="120"
+    android:viewportHeight="60">
+    <!-- Just some colored dots and dashes for confetti effect -->
+    <path android:fillColor="#03A9F4" android:pathData="M20,20 h6 v4 h-6 z" />
+    <path android:fillColor="#FFEB3B" android:pathData="M35,10 l4,4 l-3,3 l-4,-4 z" />
+    <path android:fillColor="#4CAF50" android:pathData="M15,40 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0" />
+    <path android:fillColor="#F44336" android:pathData="M25,50 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
+    <path android:fillColor="#03A9F4" android:pathData="M40,45 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0" />
+
+    <path android:fillColor="#03A9F4" android:pathData="M75,15 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0" />
+    <path android:fillColor="#FFEB3B" android:pathData="M85,25 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0" />
+    <path android:fillColor="#4CAF50" android:pathData="M95,30 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0" />
+    <path android:fillColor="#F44336" android:pathData="M80,45 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
+    <path android:fillColor="#FFEB3B" android:pathData="M105,40 l4,-2 l2,3 l-4,2 z" />
+</vector>

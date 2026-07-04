@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primary">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_back"
+            android:tint="@color/black"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Lacak Pesanan"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/btnBantuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_headset" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Bantuan"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingBottom="40dp">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cream"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No. Pesanan"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/tvOrderInvoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="#10K-..."
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="2dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="end"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvOrderStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Diproses"
+                            android:textColor="@color/secondary"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tvOrderTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="2dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:paddingHorizontal="16dp"
+                android:orientation="vertical">
+
+                <!-- Step 1 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    
+                    <ImageView
+                        android:id="@+id/icStep1"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_check_circle_green"
+                        android:layout_alignParentStart="true" />
+                        
+                    <View
+                        android:id="@+id/line1"
+                        android:layout_width="2dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@id/icStep1"
+                        android:layout_alignStart="@id/icStep1"
+                        android:layout_marginStart="15dp"
+                        android:background="@color/secondary" />
+
+                    <TextView
+                        android:id="@+id/tvTime1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="10:00"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/icStep1"
+                        android:layout_toStartOf="@id/tvTime1"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvTitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pesanan Diterima"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pesanan kamu telah diterima oleh 10K OK!"
+                            android:textColor="#444444"
+                            android:textSize="13sp"
+                            android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!-- Step 2 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp">
+                    
+                    <ImageView
+                        android:id="@+id/icStep2"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_check_circle_green"
+                        android:layout_alignParentStart="true" />
+                        
+                    <View
+                        android:id="@+id/line2"
+                        android:layout_width="2dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@id/icStep2"
+                        android:layout_alignStart="@id/icStep2"
+                        android:layout_marginStart="15dp"
+                        android:background="#D0D0D0" />
+
+                    <TextView
+                        android:id="@+id/tvTime2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="10:05"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/icStep2"
+                        android:layout_toStartOf="@id/tvTime2"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvTitle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sedang Disiapkan"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pesanan sedang disiapkan oleh tim kami"
+                            android:textColor="#444444"
+                            android:textSize="13sp"
+                            android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!-- Step 3 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp">
+                    
+                    <ImageView
+                        android:id="@+id/icStep3"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_circle_hexagon_grey"
+                        android:layout_alignParentStart="true" />
+                        
+                    <View
+                        android:id="@+id/line3"
+                        android:layout_width="2dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@id/icStep3"
+                        android:layout_alignStart="@id/icStep3"
+                        android:layout_marginStart="15dp"
+                        android:background="#D0D0D0" />
+
+                    <TextView
+                        android:id="@+id/tvTime3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="10:20"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/icStep3"
+                        android:layout_toStartOf="@id/tvTime3"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvTitle3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dalam Pengantaran"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kurir sedang dalam perjalanan menuju lokasi kamu"
+                            android:textColor="#444444"
+                            android:textSize="13sp"
+                            android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!-- Step 4 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp">
+                    
+                    <ImageView
+                        android:id="@+id/icStep4"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_circle_hexagon_grey"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:id="@+id/tvTime4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="10:45"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/icStep4"
+                        android:layout_toStartOf="@id/tvTime4"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvTitle4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pesanan Selesai"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Menunggu konfirmasi pesanan selesai"
+                            android:textColor="#444444"
+                            android:textSize="13sp"
+                            android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardCelebration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cream"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="0dp"
+                android:visibility="gone">
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+                    
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_confetti"
+                        android:scaleType="centerCrop"
+                        android:alpha="0.8" />
+                        
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp">
+                        
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/ic_check_circle_green" />
+                            
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pesanan Selesai!"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_marginTop="16dp" />
+                            
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Terima kasih telah memesan di 10K OK! 😊\nYuk, beri rating dan ulasan untuk pesananmu."
+                            android:textColor="#333333"
+                            android:textSize="14sp"
+                            android:textAlignment="center"
+                            android:layout_marginTop="8dp"/>
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnReview"
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:layout_marginTop="24dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"
+                            android:insetLeft="0dp"
+                            android:insetRight="0dp"
+                            app:backgroundTint="@color/primary"
+                            app:cornerRadius="8dp"
+                            android:text="Beri Rating &amp; Ulasan"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                            
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnHome"
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:layout_marginTop="12dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"
+                            android:insetLeft="0dp"
+                            android:insetRight="0dp"
+                            app:backgroundTint="@color/white"
+                            app:strokeWidth="1dp"
+                            app:strokeColor="#E0E0E0"
+                            app:cornerRadius="8dp"
+                            android:text="Kembali ke Beranda"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:icon="@drawable/ic_home_outline"
+                            app:iconTint="@color/black"
+                            app:iconGravity="textStart" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
