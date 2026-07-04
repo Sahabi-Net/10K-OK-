@@ -1,6 +1,6 @@
 <img width="244" height="203" alt="image" src="https://github.com/user-attachments/assets/91d3e905-f79c-4a3b-95b9-06353cf54922" />
 
-# 10K OK - Aplikasi Pemesanan & Pelacakan
+# 10K OK - Aplikasi Sarapan serba 10K
 10K OK adalah aplikasi Android berbasis Kotlin untuk memfasilitasi pemesanan dan pelacakan pesanan secara *real-time*. Proyek ini dibuat dengan tujuan menghadirkan antarmuka pengguna (UI) yang bersih, menarik, dan interaktif, baik untuk sisi pengguna (pembeli) maupun mitra (penjual). 
 Aplikasi ini menggunakan arsitektur *Client-Server* dengan aplikasi Android sebagai *frontend* dan PHP native + MySQL sebagai *backend* (REST API).
 ## ✨ Fitur Utama
