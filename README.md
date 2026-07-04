@@ -1,7 +1,7 @@
 <img width="244" height="203" alt="image" src="https://github.com/user-attachments/assets/91d3e905-f79c-4a3b-95b9-06353cf54922" />
 
 # 10K OK - Aplikasi Sarapan serba 10K
-10K OK! adalah aplikasi pemesanan sarapan berbasis Android yang dikembangkan menggunakan Kotlin dengan arsitektur Client-Server, memanfaatkan PHP Native dan MySQL sebagai backend (REST API), untuk memfasilitasi pemesanan serta pelacakan pesanan secara real-time melalui antarmuka yang bersih, menarik, dan interaktif bagi pengguna (pembeli) maupun mitra (penjual), dengan menyediakan berbagai pilihan menu makanan dan minuman seharga Rp10.000 per menu.
+10K OK! adalah aplikasi pemesanan sarapan berbasis Android yang dikembangkan menggunakan Kotlin dengan arsitektur Client-Server, memanfaatkan PHP Native dan MySQL sebagai backend (REST API), untuk memfasilitasi pemesanan serta pelacakan pesanan secara real-time melalui antarmuka yang bersih, menarik, dan interaktif bagi pengguna (pembeli) maupun mitra (penjual), dengan menyediakan berbagai pilihan menu makanan, minuman dan snack seharga Rp10.000 per menu.
 ## ✨ Fitur Utama
 ### Sisi Pengguna (Pembeli)
 * **Pemesanan Mudah**: Proses pemesanan produk yang intuitif dan cepat.
